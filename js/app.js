@@ -8604,6 +8604,20 @@ resultado.innerHTML = `
   <p class="${getColorClass(r.bttsNo)}">
     BTTS No: ${(r.bttsNo * 100).toFixed(1)}%
   </p>
+  
+<hr>
+
+<p class="${getColorClass(r.pL)}">
+  Local gana: ${(r.pL * 100).toFixed(1)}%
+</p>
+
+<p class="${getColorClass(r.pE)}">
+  Empate: ${(r.pE * 100).toFixed(1)}%
+</p>
+
+<p class="${getColorClass(r.pV)}">
+  Visitante gana: ${(r.pV * 100).toFixed(1)}%
+</p>
 
     <h4>💰 VALUE</h4>
 
