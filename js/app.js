@@ -8595,6 +8595,15 @@ function calcular() {
   UNDER: ${(r.under * 100).toFixed(1)}%
 </p>
 
+<hr>
+
+<p class="${getColorClass(r.bttsSi)}">
+  BTTS Sí: ${(r.bttsSi * 100).toFixed(1)}%
+</p>
+
+<p class="${getColorClass(r.bttsNo)}">
+  BTTS No: ${(r.bttsNo * 100).toFixed(1)}%
+</p>
 
     <h4>💰 VALUE</h4>
 
