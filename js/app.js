@@ -8637,6 +8637,25 @@ if (r.over > 0.70 && valueOver > 0) {
 }
 
 resultado.innerHTML += `<h3>${recomendacion}</h3>`;
+let analisis = "";
+
+if (r.over > 0.70 && r.bttsSi > 0.65) {
+  analisis = "🔥 PARTIDO ABIERTO → OVER + BTTS SÍ";
+} 
+else if (r.under > 0.65 && r.bttsNo > 0.60) {
+  analisis = "🧊 PARTIDO CERRADO → UNDER + BTTS NO";
+} 
+else if (r.over > 0.70) {
+  analisis = "✅ TENDENCIA GOLES → OVER";
+} 
+else if (r.bttsSi > 0.65) {
+  analisis = "✅ AMBOS ANOTAN PROBABLE";
+} 
+else {
+  analisis = "⚠️ PARTIDO EQUILIBRADO / SIN VALOR CLARO";
+}
+
+resultado.innerHTML += `<h3>${analisis}</h3>`;
 
 // ✅ LIMPIAR
 function limpiar() {
