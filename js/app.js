@@ -8582,28 +8582,28 @@ function calcular() {
   const valueBTTSsi = calcularValue(r.bttsSi, cuotas.bttsSi);
   const valueBTTSno = calcularValue(r.bttsNo, cuotas.bttsNo);
 
-  resultado.innerHTML = `
-    <p>λ Local: <b>${r.lL.toFixed(2)}</b></p>
-    <p>λ Visitante: <b>${r.lV.toFixed(2)}</b></p>
+  
+resultado.innerHTML = `
+  <p>λ Local: <b>${r.lL.toFixed(2)}</b></p>
+  <p>λ Visitante: <b>${r.lV.toFixed(2)}</b></p>
 
-    
-<p class="${getColorClass(r.over)}">
-  OVER: ${(r.over * 100).toFixed(1)}%
-</p>
+  <p class="${getColorClass(r.over)}">
+    OVER: ${(r.over * 100).toFixed(1)}%
+  </p>
 
-<p class="${getColorClass(r.under)}">
-  UNDER: ${(r.under * 100).toFixed(1)}%
-</p>
+  <p class="${getColorClass(r.under)}">
+    UNDER: ${(r.under * 100).toFixed(1)}%
+  </p>
 
-<hr>
+  <hr>
 
-<p class="${getColorClass(r.bttsSi)}">
-  BTTS Sí: ${(r.bttsSi * 100).toFixed(1)}%
-</p>
+  <p class="${getColorClass(r.bttsSi)}">
+    BTTS Sí: ${(r.bttsSi * 100).toFixed(1)}%
+  </p>
 
-<p class="${getColorClass(r.bttsNo)}">
-  BTTS No: ${(r.bttsNo * 100).toFixed(1)}%
-</p>
+  <p class="${getColorClass(r.bttsNo)}">
+    BTTS No: ${(r.bttsNo * 100).toFixed(1)}%
+  </p>
 
     <h4>💰 VALUE</h4>
 
